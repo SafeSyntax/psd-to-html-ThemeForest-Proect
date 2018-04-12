@@ -1,0 +1,363 @@
+/*
+Template Name: Park College
+Template URI: https://apnarwebsite.com
+Author Name: G M Mostakim Billah
+Author URI: https://mosta.kim
+Version: 1.0
+*/
+
+
+
+
+/*
+Needed
+font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+color: #424242 
+bg Color: #209b60 , #c5c5c5
+*/
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none!important;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Merriweather', serif;
+}
+h1 {
+
+}
+h2 {
+	
+}
+h3 {
+	
+}
+h4 {
+
+}
+
+
+/*
+========================
+1.0 Common CSS
+========================
+*/
+.title {
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Merriweather', serif;
+	color: #fff;
+	background-color: #209b60;
+	margin: 0;
+	padding: 10px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.title span {
+	display: inline-block;
+	position: relative;
+}
+
+.title span:after {
+	content: "\f101";
+	font-family: "fontAwesome";
+	position: absolute;
+	right: -10px;
+
+}
+
+/*
+========================
+1.0 Header Area Start
+========================
+*/
+.header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999999;
+
+}
+.in-header {
+    width: 1170px;
+    box-shadow: 1px -2px 9px -1px #ccc;
+    background: #fff;
+}
+.header-top {
+	background: #209b60;
+}
+.header-top:before,
+.header-top:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.header-top a {
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	padding: 8px;
+	display: inline-block;
+}
+.header-top a:hover {
+	color: #a0cab6;
+}
+.top-left, 
+.logo {
+	float: left;
+}
+.top-left ul li {
+	float: left;
+}
+.top-left ul li a {
+	display: inline-block;
+}
+.top-left ul li a:after {
+	content: "/";
+	padding-left: 8px;
+}
+.top-left ul li:last-child a:after {
+	content: "";
+}
+.top-right,
+.social {
+	float: right;
+}
+.top-right ul li {
+	float: left;
+}
+.top-right ul li i {
+	display: inline-block;
+	padding-right: 8px;
+}
+.logo-social-icons {
+	padding-top: 35px;
+	padding-bottom: 35px;
+
+}
+.logo-social-icons:after, 
+.logo-social-icons:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.social ul li {
+	float: left;
+}
+.social ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: #c5c5c5;
+	margin-left: 5px;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 30px;
+}
+.menu {
+	position: relative;
+}
+.menu:before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	width: 100%;
+	height: 2px;
+	border-top: 1px dotted #c1c1c1;
+}
+.menu .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.menu .navbar-default ul li a {
+    font-weight: 700;
+    border-right: 1px dotted #c1c1c1;
+}
+.menu .navbar-default ul li:last-child a {
+	border: 0;
+}
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px 30px;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    border-top: 2px solid #209b60;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.menu .navbar-collapse {
+	padding: 0;
+}
+.menu .caret {
+	position: relative;
+	border: 0;
+}
+.menu .caret:after {
+    content: "\f107";
+    position: absolute;
+    font-family: "fontAwesome";
+    top: -10px;
+    right: -10px;
+}
+.search {
+    padding: 20px 39px;
+    margin-right: 14px;
+    border: 1px dotted #c1c1c1;
+
+}
+
+
+
+/*Main Slider*/
+.slider .carousel-caption {
+    right: 20%;
+    left: 20%;
+    top: 34%;
+    left: 10%;
+    width: 37%;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.slider .carousel-caption h3 {
+	display: inline-block;
+	background: #74be9a;
+	margin: 0;
+	padding: 15px;
+	padding-right: 30px;
+	font-size: 30px;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background: #fff;
+    padding: 45px 20px;
+    font-size: 25px;
+    color: #209b60;
+}
+.arrow-left {
+	border-right: 4px solid #209b60;
+}
+.arrow-right {
+	left: auto;
+	right: 0;
+	border-left: 4px solid #209b60;
+}
+
+/*Special Section*/
+.special-sec {
+	position: relative;
+	top: -100px;
+	margin-bottom: -100px;
+}
+ul.special-list {
+	display: table;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	
+}
+.special-list li {
+	display: table-cell;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 20%;
+}
+.special-list li:first-child {
+	background: #209b60;
+}
+.special-list li:nth-child(2) {
+	background: #198752;
+}
+.special-list li:nth-child(3) {
+	background: #107243;
+}
+.special-list li:nth-child(4) {
+	background: #065f34;
+}
+.special-list li:last-child {
+	background: #034b29;
+}
+.special-list li a {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	background: #fff;
+	border-radius: 50%;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	
+}
+.special-list li a:hover {
+	background-color: #0089e9;
+}
+.special-list li a:hover i {
+	color: #fff;
+}
+.special-list li a i {
+    display: inline-block;
+    font-size: 36px;
+    line-height: 75px;
+    color: #209b60;
+}
+.special-list li h5 {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: 'Merriweather', serif;
+	color: #fff;
+	text-transform: capitalize;
+	margin-top: 20px;
+}
+
+/*Main Area*/
+.main-area {
+	/*padding-top: 30px;*/
+}
+.sidebar-one {
+	padding-left: 30px;
+	padding-right: 30px;
+	border-left: 1px dotted #ccc;
+	border-right: 1px dotted #ccc;
+	padding-top: 30px;
+}
+.search-form input {
+	border-radius: 0;
+}
+.search-form select {
+	height: 20px;
+}
+.search-form .form-group {
+	margin-bottom: 10px;
+}
+.search-form .submit {
+	text-align: right;
+	
+}
+.search-form .submit input {
+	display: inline-block;
+	padding: 5px 10px;
+}
